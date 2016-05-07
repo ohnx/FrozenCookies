@@ -5,6 +5,7 @@ var FrozenCookies = {
 FrozenCookies.loadInterval = setInterval(function() {
   if (Game && Game.ready) {
   	console.log("loaded!");
+  	clearInterval(FrozenCookies.loadInterval);
 document.addEventListener('keydown', function(event) {
   if (!Game.promptOn) {
     if(event.keyCode == 71) {
